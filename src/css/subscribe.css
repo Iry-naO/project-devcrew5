@@ -1,0 +1,33 @@
+.subscribe-box {
+    margin-bottom: 32px;
+}
+
+.subscribe-title {
+    margin-bottom: 24px;
+    max-width: 375px;
+}
+
+.subscribe-subtitle {
+    font-size: 18px;
+    margin-bottom: 32px;
+    max-width: 375px;
+}
+
+.subscribe-field-box {
+    margin-bottom: 16px;
+    position: relative;
+    align-items: center;
+}
+
+.subscribe-input {
+    border: 1px solid var(--opacity-neutral-darkest-15);
+    border-radius: 12px;
+    width: 100%;
+    font-size: 16px;
+    max-width: 375px;
+    height: 40px;
+    padding: 8px 12px;
+    background-color: transparent;
+    outline: transparent;
+    transition: border 250ms ease-in-out, color 250ms ease-in-out;
+}
