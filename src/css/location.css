@@ -1,0 +1,146 @@
+.location-section {
+    padding: 64px 0;
+}
+
+.location-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.location-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.location-title {
+    font-family: 'Aboreto', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: 24px;
+}
+
+.location-second-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contacts-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contacts-icon {
+    fill: #0B0803;
+}
+
+.contacts-item-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contacts-text {
+    font-family: 'Aboreto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+}
+
+.contacts-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: inherit;
+}
+
+.contacts-second-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.link-get-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contacts-link-get {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: inherit;
+}
+
+.location-map {
+    border-radius: 40px;
+    width: 288px;
+    height: 307px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .contacts-list {
+        flex-direction: row;
+    }
+
+    .contacts-item {
+        width: calc((100% - 80px) / 3);
+    }
+
+    .location-map {
+        border-radius: 40px;
+        width: 704px;
+        height: 377px;
+        margin: 0 auto;
+        }
+}
+
+@media only screen and (min-width: 1440px) {
+    .location-container {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .location-wrap {
+        width: 419px;
+    }
+
+    .location-title {
+        font-size: 48px;
+    }
+
+    .contacts-list {
+        flex-direction: column;
+    }
+
+    .contacts-item {
+        width: 100%;
+    }
+
+    .location-map {
+    width: 869px;
+    height: 697px;
+    }
+}
