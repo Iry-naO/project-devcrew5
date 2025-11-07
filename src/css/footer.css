@@ -1,5 +1,4 @@
 .footer {
-  background-color: #b37c57;
   padding: 24px 0 24px;
   color: #0b0803;
 }
@@ -10,7 +9,6 @@
   align-items: center;
   gap: 32px;
   width: 100%;
-  padding: 0 16px;
 }
 
 .footer-card {
@@ -128,9 +126,6 @@
     padding: 24px 0;
   }
 
-  .footer-container {
-    padding: 0 32px;
-  }
 
   .footer-card {
     padding: 32px 124px;
@@ -155,17 +150,11 @@
 }
 
 @media (min-width: 1440px) {
-  .footer .container,
-  .footer-container {
-    max-width: 1440px;
-  }
+  
   .footer-socials{
     gap:12px;
   }
 
-  .footer-container {
-    padding: 0 32px;
-  }
 
   .footer-card {
     flex-direction: row;
