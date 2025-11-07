@@ -16,11 +16,11 @@
     />
     <title>Vanilla App Template</title>
     <script type="module" crossorigin src="/project-devcrew5/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-devcrew5/assets/index-CVfU4uNx.css">
+    <link rel="stylesheet" crossorigin href="/project-devcrew5/assets/index-BQEJkGSA.css">
   </head>
   <body>
-    <section class="header container">
-  <div class="header-box">
+    <section class="header">
+  <div class="container header-box">
     <div class="logo-header-box">
       <a class="logo-header-link" href="#" noopener noreferer
         ><svg class="logo-header">
@@ -39,33 +39,47 @@
       </nav>
     </div>
     <div class="header-navigation-mob">
-      <button type="button" class="header-button-menu">
-        <svg><use href="../img/webp/icons.svg#icon-menu"></use></svg>
+      <button type="button" class="header-button-menu" data-mobile-open>
+        <svg class="menu-button-icon">
+          <use href="../img/webp/icons.svg#icon-menu"></use>
+        </svg>
       </button>
     </div>
   </div>
 </section>
 
-    <div class="mobile-menu-box">
+    <div class="container mobile-menu-box" data-mobile>
   <div class="logo-mobile-box">
     <a class="logo-mobile-link" href="#" noopener noreferer
-      ><svg class="logo-header">
+      ><svg class="logo-header-menu">
         <use href="../img/webp/icons.svg#icon-logo"></use></svg
     ></a>
   </div>
-  <div class="mobile-btn-box">
-    <button type="button" class="mobile-button-close">
-      <svg><use href="../img/webp/icons.svg#icon-close"></use></svg>
-    </button>
-  </div>
-  <div class="navigation-header-box">
-    <nav class="navigation-header">
-      <ul class="header-navigation-unlist">
-        <li>About us</li>
-        <li>Benefits</li>
-        <li>Gallery</li>
-        <li>Testimonial</li>
-        <li>Location</li>
+
+  <button type="button" class="mobile-button-close" data-mobile-close>
+    <svg class="menu-close-icon">
+      <use href="../img/webp/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <div class="navigation-menu-box">
+    <nav class="navigation-menu">
+      <ul class="menu-navigation-unlist">
+        <li class="mobile-menu-list">
+          <a href="#" class="mobile-menu-link" data-mobile-close>About us</a>
+        </li>
+        <li class="mobile-menu-list">
+          <a href="#" class="mobile-menu-link">Benefits</a>
+        </li>
+        <li class="mobile-menu-list">
+          <a href="#" class="mobile-menu-link">Gallery</a>
+        </li>
+        <li class="mobile-menu-list">
+          <a href="#" class="mobile-menu-link">Testimonial</a>
+        </li>
+        <li class="mobile-menu-list">
+          <a href="#" class="mobile-menu-link">Location</a>
+        </li>
       </ul>
     </nav>
   </div>
