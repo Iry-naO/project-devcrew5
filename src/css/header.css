@@ -1,4 +1,4 @@
-.header {
+/* .header {
   padding: 20px 0;
 }
 .nav {
@@ -41,4 +41,38 @@
 }
 .nav-link.active::after {
   background: #747bff;
+} */
+ button{
+  border: none;
+  color: inherit; 
+  background-color: transparent;
+  cursor: pointer;
+ }
+ .header-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  width: 100%;
+  height: auto;
+ }
+.logo-header{
+  width: 84px;
+  height: 36px;
+}
+.navigation-header-box{
+  display: none;
+}
+.header-button-menu{
+
+  display: flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+.menu-button-icon{
+  width: 24px;
+  height: 24px;
 }
