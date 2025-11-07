@@ -1,21 +1,22 @@
+.subscribe-container {
+        display: flex;
+        gap: 32px;
+    }
+
 .subscribe {
-    display: flex;
 align-items: flex-start;
 justify-content: flex-start;
 flex-direction: column;
-max-width: 100%;
+width: 100%;
 }
 
-.subscribe-box {
-margin-bottom: 32px;
-}
 
 .subscribe-title {
     font-family: "Aboreto", sans-serif;
 font-weight: 400;
 font-size: 36px;
 margin-bottom: 24px;
-max-width: 100%;
+width: 100%;
 
 /* line-height: 43px; */ 
 line-height: 1.2;
@@ -23,14 +24,13 @@ letter-spacing: -0.01em;
 }
 
 .subscribe-subtitle {
-    font-family: "Quicksand", sans-serif;
+
 font-weight: 400;
 font-size: 18px;
 
 /* line-height: 27px; */ 
 line-height: 1.5;
-color: #0b0803;
-padding-bottom: 32px;
+margin-bottom: 32px;
 }
 
 .subscribe-input {
@@ -43,7 +43,8 @@ padding-bottom: 32px;
   padding: 8px 12px;
   background-color: transparent;
   outline: transparent;
-  transition: border 250ms ease-in-out, color 250ms ease-in-out;
+
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-input:focus::placeholder {
@@ -72,17 +73,18 @@ gap: 12px;
 font-weight: 500;
 font-size: 16px;
 color: var(--color-white);
-fill: var(--color-white);
 border-radius: 100px;
 padding: 10px 24px;
 width: 100%;
-max-width: 375px;
+min-width: 375px;
 border: transparent;
 height: 44px;
 box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
 background: #6f4e37;
-margin-top: 24px;
-margin-bottom: 16px;
+}
+
+.icon-chevrons-right {
+    fill: var(--color-white);
 }
 
 .subscribe-btn:hover,
@@ -103,51 +105,46 @@ font-size: 12px;
     border-radius: 40px;
 }
 
+.subscribe-field-box {
+margin-bottom: 16px;
+flex-direction: column;
+gap: 16px;
+display: flex;
+}
+
 
 @media screen and (min-width: 768px) {
     .subscribe-title {
-max-width: 100%;
+   width: 704px;
     }
       .subscribe-subtitle {
     max-width: 100%;
   }
 
   .subscribe-field-box {
-    display: flex;
-    column-gap: 24px;
+   flex-direction: row;
   }
 
   .subscribe-input {
     width: 340px;
-    margin-bottom: 16px;
   }
 
   .subscribe-btn {
-    max-width: 158px;
+    min-width: 158px;
     margin-top: 0;
   }
 }
 
 @media screen and (min-width: 1440px) {
-    .subscribe-container {
-        display: flex;
-        gap: 32px;
-    }
-
     .subscribe-box {
         margin: auto 0;
     }
 
     .subscribe-title {
-        width: 616px;
+        max-width: 616px;
     }
 
     .subscribe-subtitle {
         width: 640px;
     }
-
-    .subscribe-input {
-        margin-bottom: 16px;
-    }
-   
 }
