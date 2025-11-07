@@ -1,0 +1,65 @@
+.experience-title {
+  font-family: 'Aboreto';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #0b0803;
+  max-width: 288px;
+  margin: 0 auto 24px;
+}
+
+.experience-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: #0b0803;
+  margin: 0 auto 32px;
+  max-width: 288px;
+}
+
+@media only screen and (min-width: 768px) {
+  .experience-title,
+  .experience-text {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .experience-title {
+    font-size: 48px;
+  }
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .experience-list {
+    flex-direction: row;
+    gap: 32px;
+    height: 1348px;
+    width: 704px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .experience-list {
+    flex-direction: column;
+    gap: 32px;
+    height: 948px;
+    width: 1312px;
+  }
+}
+
+.experience-img {
+  border-radius: 32px;
+}
