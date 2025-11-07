@@ -42,25 +42,26 @@
 .nav-link.active::after {
   background: #747bff;
 } */
- button{
+.header-button-menu{
   border: none;
   color: inherit; 
   background-color: transparent;
   cursor: pointer;
- }
- .header-box{
+}
+  .header-box{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 0;
   width: 100%;
   height: auto;
- }
-.logo-header{
+}
+.header-logo-icon{
+  margin-top: 4px;
   width: 84px;
   height: 36px;
 }
-.navigation-header-box{
+.header-navigation-box{
   display: none;
 }
 .header-button-menu{
@@ -72,7 +73,39 @@
   justify-content: center;
   padding: 12px;
 }
-.menu-button-icon{
+.header-menu-icon{
   width: 24px;
   height: 24px;
 }
+@media only screen and (min-width: 768px) {
+  .header-navigation{
+    margin-left: 100px;
+  }
+  .header-navigation-box{
+  display: flex;
+  
+}
+.header-button-menu{
+  display: none;
+}
+.header-navigation-unlist{
+  display: flex;
+  gap:32px;
+
+}
+.header-navigation-link{
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+color: #0b0803;
+}
+.header-navigation-list:focus{
+  opacity: 0.7;
+}
+.header-box {
+    padding: 18px 32px;
+}
+.header-navigation-list:hover{
+opacity: 0.5;}
+}
+.@media screen and (min-width:1158px) {}
