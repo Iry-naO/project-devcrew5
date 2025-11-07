@@ -68,6 +68,7 @@
     justify-content: center;
     align-items: center;
     padding: 18px 0;
+    position: relative;
 }
 .header-logo-icon{
   fill: #0b0803;
@@ -99,10 +100,14 @@
 
 }
 .header-navigation-link{
+  display: block;
+  padding: 24px 0;
   font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 color: #0b0803;
+position: relative;
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-navigation-list:focus{
   opacity: 0.7;
@@ -110,6 +115,17 @@ color: #0b0803;
 
 .header-navigation-list:hover{
 opacity: 0.5;}
+}
+.header-navigation-link:hover::after,
+.header-logo-link:hover::after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #6F4E37;
 }
 @media screen and (min-width:1158px) {
 
