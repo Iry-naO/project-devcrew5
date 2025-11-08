@@ -59,12 +59,14 @@
 @media screen and (min-width: 768px) {
   .testimonials-item {
     width: calc((100% - 24px) / 2);
+    min-height: 253px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .testimonials-item {
     width: calc((100% - 72px) / 4);
+    min-height: 303px;
   }
 }
 
@@ -95,4 +97,10 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .testim-text-autor{
+    margin-top: 0;
+  }
 }
