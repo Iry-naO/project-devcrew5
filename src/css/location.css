@@ -44,7 +44,7 @@
 }
 
 .location-contacts-icon {
-    fill: #0B0803;
+    fill: currentColor;
 }
 
 .location-contacts-item-wrap {
@@ -83,6 +83,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    color: #0B0803;
 }
 
 .location-contacts-link-get {
@@ -140,7 +141,7 @@
     }
 
     .location-contacts-link {
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .location-contacts-link:hover,
@@ -148,16 +149,13 @@
         color: #4c2e1c;
     }
 
-    .location-link-get-wrap,
-    .location-contacts-link-get {
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .location-link-get-wrap {
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .location-link-get-wrap:hover,
-    .location-link-get-wrap:focus,
-    .location-contacts-link-get:hover,
-    .location-contacts-link-get:focus {
-        color: #4c2e1c;
+    .location-link-get-wrap:focus-within {
+    color: #4c2e1c;
     }
 
     .location-map {
