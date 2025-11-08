@@ -1,53 +1,56 @@
-<section class="section-welcome">
-  <div class="welcome-container">
-    <div class="position-container">
-      <p class="welcome-tag">Welcome</p>
-      <h2 class="welcome-title">Our Journey: Passion for Quality Coffee</h2>
-    </div>
-    <div class="position-container">
-      <p class="welcome-text">
-        At CoffeeJoy, we believe that every cup tells a story. Our mission is to
-        bring you the finest coffee experiences, crafted with care and
-        dedication. We are committed to sourcing high-quality beans and roasting
-        them to perfection, ensuring each sip is a delight.
-      </p>
+<section class="section">
+  <div class="container">
+    <div class="welcome-container">
+      <div class="position-container">
+        <p class="welcome-tag">Welcome</p>
+        <h2 class="welcome-title">Our Journey: Passion for Quality Coffee</h2>
+      </div>
+      <div class="position-container">
+        <p class="welcome-text">
+          At CoffeeJoy, we believe that every cup tells a story. Our mission is
+          to bring you the finest coffee experiences, crafted with care and
+          dedication. We are committed to sourcing high-quality beans and
+          roasting them to perfection, ensuring each sip is a delight.
+        </p>
 
-      <a class="link-location" href="#location">
-        Find location
-        <svg class="location-icon" width="24" height="24" aria-hidden="true">
-          <use href="./img/webp/icons.svg#icon-map-pin"></use>
-        </svg>
-      </a>
+        <a class="link-location" href="#location">
+          Find location
+          <svg class="location-icon" width="24" height="24" aria-hidden="true">
+            <use href="./img/webp/icons.svg#icon-map-pin"></use>
+          </svg>
+        </a>
+      </div>
     </div>
+
+    <picture>
+      <source
+        media="(min-width: 1158px )"
+        srcset="
+          ./img/webp/welcome/welcome-desk-min.jpg    1x,
+          ./img/webp/welcome/welcome@2x-desk-min.jpg 2x
+        "
+      />
+      <source
+        media="(min-width: 768px )"
+        srcset="
+          ./img/webp/welcome/welcome-tab-min.jpg    1x,
+          ./img/webp/welcome/welcome@2x-tab-min.jpg 2x
+        "
+      />
+      <source
+        media="(max-width: 767px )"
+        srcset="
+          ./img/webp/welcome/welcome-mob-min.jpg    1x,
+          ./img/webp/welcome/welcome@2x-mob-min.jpg 2x
+        "
+      />
+      <img
+        class="welcome-foto"
+        src="./img/webp/welcome/welcome-desk-min.jpg"
+        width="1312"
+        height="738"
+        alt="Barista preparing coffee"
+      />
+    </picture>
   </div>
-  <picture>
-    <source
-      media="(min-width: 1158px )"
-      srcset="
-        ./img/webp/welcome/welcome-desk-min.jpg    1x,
-        ./img/webp/welcome/welcome@2x-desk-min.jpg 2x
-      "
-    />
-    <source
-      media="(min-width: 768px )"
-      srcset="
-        ./img/webp/welcome/welcome-tab-min.jpg    1x,
-        ./img/webp/welcome/welcome@2x-tab-min.jpg 2x
-      "
-    />
-    <source
-      media="(max-width: 767px )"
-      srcset="
-        ./img/webp/welcome/welcome-mob-min.jpg    1x,
-        ./img/webp/welcome/welcome@2x-mob-min.jpg 2x
-      "
-    />
-    <img
-      class="welcome-foto"
-      src="./img/webp/welcome/welcome-desk-min.jpg"
-      width="360"
-      height="300"
-      alt="Barista preparing coffee"
-    />
-  </picture>
 </section>
