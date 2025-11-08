@@ -117,7 +117,7 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .header-navigation-list:hover{
 opacity: 0.5;}
-}
+
 .header-navigation-link:hover::after,
 .header-logo-link:hover::after{
     content: '';
@@ -128,7 +128,15 @@ opacity: 0.5;}
     height: 4px;
     border-radius: 2px;
     background-color: #6F4E37;
+    
 }
-@media screen and (min-width:1158px) {
+.header-box{
+  padding: 0 32px;
+}
+}
 
+@media screen and (min-width:1158px) {
+.header-box{
+  padding: 0 16px;
+}
 }
