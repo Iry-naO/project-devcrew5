@@ -1,9 +1,5 @@
 @media screen and (min-width:320px) {
-.section-quality{
-    padding: 64px 0;
-}
-
-.text-quality{
+.quality-text{
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
@@ -11,7 +7,7 @@
     margin-bottom: 16px;
 }
 
-.title-coffee{
+.quality-title-coffee{
    margin: 0 auto 24px;
    text-align: center;
    font-family: "Aboreto",
@@ -23,36 +19,41 @@
    width: 100%;
    text-transform: uppercase;
 }
-.text-at{
+.quality-text-at{
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
     text-align: center;
-    margin-bottom: 32px;
-    
+    margin: 0 auto 32px;
 }
 .quality-list{
     display: flex;
     flex-direction: column;
     gap: 24px;
-    padding: 0;
-    margin: 0;
+}
+
+.quality-list-item{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
 }
 
 .quality-img{
     border-radius: 32px;
-    width: 100%;
-    height: auto;
+
 }
 
-.title-text {
+.quality-title-text{
     margin-top: 32px;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.5;
     text-align: center;
+    max-width: 284px;
+
 }
-.text{
+.quality-text-p{
     margin-top: 8px;
     font-weight: 400;
     font-size: 16px;
@@ -63,12 +64,12 @@
 
 @media only screen and (min-width:768px) {
 
-.title-coffee{
+.quality-title-coffee{
     width: 452px;
 }
-.text-at{
+.quality-text-at{
     width: 704px;
-    margin: 0 auto 32px;
+    text-align: center;
 
 }
 
@@ -79,30 +80,25 @@
     gap: 24px;
 }
 
-.list-item{
+.quality-list-item{
     width: calc(50% - 12px);
 }
-.list-item:nth-child(3){
+
+.quality-list-item:nth-child(1) .quality-text-p{
+    max-width: 294px;
+}
+
+.quality-list-item:nth-child(3){
     width: 100%;
 }
-.list-item:nth-child(3) .quality-img{
-    width: 100%;
-    object-fit: cover;
-}
+
 .quality-img{
     width: 100%;
     object-fit: cover;
     border-radius: 32px;
 }
 
-.title-text:nth-child(3){
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 704px;
-}
-
-.text:nth-child(3){
+.quality-text-p:nth-child(3){
     max-width: 440px;
     margin-right: auto;
     margin-left: auto;
@@ -111,30 +107,34 @@
 
 @media screen and (min-width: 1440px){
 
-.title-coffee{
+.quality-title-coffee{
     width: 768px;
     font-size: 48px;
 }
-.text-at{
-    margin: 0 auto 32px;
+.quality-text-at{
     width: 768px;
 }
 
 .quality-list{
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;   
+    flex-wrap: nowrap;  
 }
-.list-item{
+.quality-list-item{
     width: calc((100% - 48px) / 3);
 }
-.list-item:nth-child(3){
+.quality-list-item:nth-child(3) {
     width: calc((100% - 48px) / 3);
+}
+.quality-list-item .quality-title-text{
+    max-width: 440px;
+}
+
+.quality-list-item:nth-child(1) .quality-text-p {
+    max-width: 421px;
 }
 
 .quality-img{
     object-fit: cover;
-   
 }
 } 
 
