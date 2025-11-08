@@ -1,14 +1,8 @@
-
 @media screen and (min-width:320px) {
-.quality{
-    padding: 64px 16px;
-    text-align: center;
+.section-quality{
+    padding: 64px 0;
 }
 
-.quality-container{
-    max-width: 100%;
-    margin: 0 auto;
-}
 .text-quality{
     font-weight: 600;
     font-size: 16px;
@@ -18,51 +12,37 @@
 }
 
 .title-coffee{
-   margin: 0 auto;
-   margin-bottom: 24px;
-   align-items: center;
+   margin: 0 auto 24px;
+   text-align: center;
    font-family: "Aboreto",
    sans-serif;
    font-weight: 400;
    font-size: 36px;
    line-height: 1.2;
    letter-spacing: -0.01em;
-   width: 288px;
+   width: 100%;
    text-transform: uppercase;
-}
-.list{
-    display: flex;
-    flex-direction: column;
-  
 }
 .text-at{
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
     text-align: center;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
     
 }
-
-
-
-.list{
+.quality-list{
     display: flex;
     flex-direction: column;
     gap: 24px;
     padding: 0;
     margin: 0;
 }
-.list-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.quality-img{
-   
-    height: auto;
-    border-radius: 32px;
 
+.quality-img{
+    border-radius: 32px;
+    width: 100%;
+    height: auto;
 }
 
 .title-text {
@@ -71,43 +51,28 @@
     font-size: 20px;
     line-height: 1.5;
     text-align: center;
-    
 }
 .text{
-    margin-top:8px;
+    margin-top: 8px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
-    padding-bottom: 24px;
 }
 }
-@media only screen and (min-width:375px) {
- 
- .text-at{
-    margin: 0 auto ;
- }
-
- .list-item{
-    margin: 0 auto;
-    
- }
-}
-
 
 @media only screen and (min-width:768px) {
 
 .title-coffee{
-    text-align: center;
-    margin: 0 auto;
-    padding-bottom: 24px;
     width: 452px;
 }
 .text-at{
-    max-width: 704px;
+    width: 704px;
+    margin: 0 auto 32px;
+
 }
 
-.list{
+.quality-list{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -117,31 +82,59 @@
 .list-item{
     width: calc(50% - 12px);
 }
+.list-item:nth-child(3){
+    width: 100%;
+}
+.list-item:nth-child(3) .quality-img{
+    width: 100%;
+    object-fit: cover;
+}
 .quality-img{
-    max-width: 100%;
-    width: 340px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 32px;
 }
 
-} 
-@media screen and (min-width: 1440px){
-.quality{
-    padding: 64px;
+.title-text:nth-child(3){
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 704px;
 }
+
+.text:nth-child(3){
+    max-width: 440px;
+    margin-right: auto;
+    margin-left: auto;
+}
+} 
+
+@media screen and (min-width: 1440px){
 
 .title-coffee{
     width: 768px;
     font-size: 48px;
 }
-.list{
-    justify-content: space-between;
-    gap: 24px;
+.text-at{
+    margin: 0 auto 32px;
+    width: 768px;
+}
+
+.quality-list{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;   
 }
 .list-item{
-    width: calc((100% - 48px)/3);
+    width: calc((100% - 48px) / 3);
+}
+.list-item:nth-child(3){
+    width: calc((100% - 48px) / 3);
 }
 
 .quality-img{
-    width: 421px;
+    object-fit: cover;
+   
 }
 } 
 
