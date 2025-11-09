@@ -25,7 +25,7 @@ margin-bottom: 32px;
 }
 
 .subscribe-input {
-    border: 1px solid #000000;
+    border: 1px solid rgba(11, 8, 3, 0.15);
   border-radius: 12px;
   width: 100%;
   font-size: 16px;
@@ -47,6 +47,24 @@ transition: 250ms solid cubic-bezier(0.4, 0, 0.2, 1);
 color: #E53935;
 }
 
+.subscribe-input:invalid:focus:not(:placeholder-shown) + * + .subscribe-error {
+    opacity: 1;
+}
+
+.subscribe-input:valid:focus:not(:placeholder-shown) {
+    display: block;
+}
+
+.subscribe-error {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    font-size: 12px;
+    color: var(--color-error-red);
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+}
+
 .subscribe-input:focus:not(:placeholder-shown) {
     border: 1px solid darkgreen;
 }
@@ -66,12 +84,13 @@ width: 100%;
 border: transparent;
 height: 44px;
 box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+color: #fff;
 background: #6f4e37;
 transition: 250ms solid cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-chevrons-right {
-    fill: var(--color-white);
+.icon-chevrons-rigth {
+      fill: #fff;
 }
 
 .subscribe-btn:hover,
