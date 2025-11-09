@@ -1,0 +1,46 @@
+<div class="backdrop is-open" data-modal>
+  <div class="modal">
+    <button type="button" class="modal-btn-cross" data-modal-close>
+      <svg class="modal-icon" width="32" height="32">
+        <use href="/img/webp/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal-title">Welcome to the world of CoffeeJoy!</h2>
+    <p class="modal-text">
+      Fresh brews, special offers, and cozy updates are coming your way.
+    </p>
+    <picture>
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          /img/webp/modal/modal-desk.webp    1x,
+          /img/webp/modal/modal@2x-desk.webp 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /img/webp/modal/modal-tab.webp    1x,
+          /img/webp/modal/modal@2x-tab.webp 2x
+        "
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          /img/webp/modal/modal-mob.webp    1x,
+          /img/webp/modal/modal@2x-mob.webp 2x
+        "
+      />
+      <img
+        class="modal-img"
+        src="/img/webp/modal/modal-mob.webp"
+        alt="an envelop an a cup of tea"
+        width="644"
+        height="374"
+      />
+    </picture>
+    <button type="button" class="modal-btn-close" data-modal-close>
+      Close
+    </button>
+  </div>
+</div>
