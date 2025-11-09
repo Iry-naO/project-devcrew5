@@ -38,21 +38,12 @@ margin-bottom: 32px;
 transition: 250ms solid cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.subscribe-input:focus {
+    border-color: rgba(11, 8, 3, 0.4);
+}
+
 .subscribe-input:focus::placeholder {
     color: transparent;
-}
-
-.subscribe-input:focus:not(:placeholder-shown) {
-    border: 1px solid #E53935;
-color: #E53935;
-}
-
-.subscribe-input:invalid:focus:not(:placeholder-shown) + * + .subscribe-error {
-    opacity: 1;
-}
-
-.subscribe-input:valid:focus:not(:placeholder-shown) {
-    display: block;
 }
 
 .subscribe-error {
@@ -60,14 +51,20 @@ color: #E53935;
     top: 40px;
     left: 0;
     font-size: 12px;
-    color: var(--color-error-red);
+    color: #E53935;
     opacity: 0;
-    transition: opacity 250ms ease-in-out;
+    transition: opacity 250ms ease;
 }
 
-.subscribe-input:focus:not(:placeholder-shown) {
-    border: 1px solid darkgreen;
+.subscribe-input:invalid:not(:placeholder-shown) {
+    border-color: #E53935;
+    color: #E53935;
 }
+
+.subscribe-input:invalid:not(:placeholder-shown) + .subscribe-error {
+    opacity: 1;
+}
+
 
 .subscribe-btn {
     display: flex;
