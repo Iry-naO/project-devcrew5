@@ -47,13 +47,9 @@ transition: 250ms solid cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-error {
-    position: absolute;
-    top: 40px;
-    left: 0;
-    font-size: 12px;
-    color: #E53935;
-    opacity: 0;
-    transition: opacity 250ms ease;
+  display: none;
+  font-size: 12px;
+  color: #E53935;
 }
 
 .subscribe-input:invalid:not(:placeholder-shown) {
@@ -62,7 +58,7 @@ transition: 250ms solid cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-input:invalid:not(:placeholder-shown) + .subscribe-error {
-    opacity: 1;
+    display: block;
 }
 
 
