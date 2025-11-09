@@ -1,6 +1,8 @@
 .hero{
-    padding: 108px 0;
-    max-width: 375px;
+        display: flex;
+    align-items: center;
+    max-width: 1440px;
+    min-height: 644px;
     margin: 0 auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(/img/webp/hero/hero-mob-min.jpg);
@@ -15,9 +17,24 @@ background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     }
 }
 
+.hero-container{
+    min-width: 320px;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+.hero-text-box{
+        display: flex
+;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 560px;
+}
 .hero-tittle{
 font-family: "Aboreto", sans-serif;
-    margin-bottom: 24px;
 font-weight: 400;
 font-size: 40px;
 line-height: 1.2;
@@ -26,7 +43,6 @@ color: #fff;
 
 }
 .hero-text{
-    margin-bottom: 32px;
 font-size: 18px;
 line-height: 1.5;
 color: #fff;
@@ -51,14 +67,20 @@ color: #0b0803;
 
 
 @media screen and (min-width: 768px) {
+    
     .hero {
-     padding: 312px 0;
-     max-width: 768px;
+    min-height: 900px;
     text-align: left;
-    align-items: flex-start;
+    
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
      url(/img/webp/hero/hero-tab-min.jpg);
     }
+    .hero-container{
+    
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
     @media (min-resolution: 192dpi){
         .hero{
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -68,13 +90,21 @@ color: #0b0803;
    
   
 }
-@media screen and (min-width:1158px) {
+@media screen and (min-width:1440px) {
+    .hero-text-box{
+     width: 560px;
+}
+        .hero-container{
+    
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
     .hero{
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
          url(/img/webp/hero/hero-desk-min.jpg);
  padding-top: 259px;
  padding-bottom: 259px;
-      max-width: 1440px;
     }
     .hero-container{
         margin-left: 64px;
