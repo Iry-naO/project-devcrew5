@@ -8,6 +8,10 @@
   background-position: center;
   background-size: cover;
 }
+.Hero-button-link{
+    color: #fff;
+    
+}
 @media (min-resolution: 192dpi) {
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
