@@ -44,7 +44,6 @@
 } */
 .header{
       background-color: #e0cbb4;
-    position: fixed;
     width: 100%;
 }
 .header-button-menu{
@@ -109,7 +108,6 @@ font-size: 16px;
 line-height: 1.5;
 color: #0b0803;
 position: relative;
-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-navigation-list:focus{
   opacity: 0.7;
@@ -131,12 +129,10 @@ opacity: 0.5;}
     
 }
 .header-box{
-  padding: 0 32px;
+  padding: 0 64px;
 }
 }
 
 @media screen and (min-width:1158px) {
-.header-box{
-  padding: 0 16px;
-}
+
 }

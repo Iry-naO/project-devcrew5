@@ -62,3 +62,8 @@
 .mobile-menu-link:focus-visible {
     color: #4c2e1c;
 }
+@media only screen and (min-width: 768px) {
+    .mobile-menu-box{
+        display: none;
+    }
+}
