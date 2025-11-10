@@ -8,8 +8,16 @@
     modal: document.querySelector('[data-mobile]'),
   };
 
+  const menuLinks = document.querySelectorAll('[data-mobile] a');
+
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      toggleModal();
+    });
+  });
 
   function toggleModal() {
     // is-open це клас який буде додаватися/забиратися на бекдроп при натисканні на кнопки
