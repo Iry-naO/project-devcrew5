@@ -9,6 +9,20 @@
     modal: document.querySelector('[data-modal]'),
   };
 
+  const subscribeForm = document.querySelector('.subscribe-form');
+  const emailInput = document.querySelector('#subscribe-email');
+  if (subscribeForm && emailInput) {
+    subscribeForm.addEventListener('submit', e => {
+      e.preventDefault();
+      if (emailInput.checkValidity()) {
+        toggleModal();
+        subscribeForm.reset();
+      } else {
+        emailInput.reportValidity();
+      }
+    });
+  }
+
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn1.addEventListener('click', toggleModal);
   refs.closeModalBtn2.addEventListener('click', toggleModal);
