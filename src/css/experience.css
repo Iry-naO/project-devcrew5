@@ -35,11 +35,22 @@
     flex-direction: row;
     gap: 32px;
   }
+  .experience-item {
+    width: calc((100% - 32px) / 2);
+  }
+  @media only screen and (max-width: 1439px) {
+    .experience-item:last-child {
+      width: 704px;
+    }
+  }
 }
 
 @media only screen and (min-width: 1440px) {
   .experience-list {
     flex-direction: column;
     height: 948px;
+  }
+  .experience-item {
+    width: calc((100% - 64px) / 3);
   }
 }
