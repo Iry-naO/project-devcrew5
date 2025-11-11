@@ -23,6 +23,20 @@
     });
   }
 
+  const modal = refs.modal;
+  const closeBtns = document.querySelectorAll(
+    '[data-modal-close], [data-modal-stop]'
+  );
+  closeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      modal.classList.remove('is-open');
+    });
+  });
+  modal.addEventListener('click', e => {
+    if (e.target === modal) {
+      modal.classList.remove('is-open');
+    }
+  });
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn1.addEventListener('click', toggleModal);
   refs.closeModalBtn2.addEventListener('click', toggleModal);
