@@ -3,8 +3,8 @@
     // Додати атрибут data-modal-open на кнопку відкриття
     openModalBtn: document.querySelector('[data-modal-open]'),
     // Додати атрибут data-modal-close на кнопку закриття
-    closeModalBtn1: document.querySelector('[data-modal-close]'),
-    closeModalBtn2: document.querySelector('[data-modal-stop]'),
+    closeModalBtn1: document.querySelector('[data-modal-stop]'),
+    closeModalBtn2: document.querySelector('[data-modal-close]'),
     // Додати атрибут data-modal на бекдроп модалки
     modal: document.querySelector('[data-modal]'),
   };
@@ -23,16 +23,13 @@
     });
   }
 
-  const modal = refs.modal;
-  const closeBtns = document.querySelectorAll(
-    '[data-modal-close], [data-modal-stop]'
-  );
-  closeBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
+  document.addEventListener('click', e => {
+    const modal = document.querySelector('[data-modal]');
+
+    if (e.target.closest('button[data-modal-close], button[data-modal-stop]')) {
       modal.classList.remove('is-open');
-    });
-  });
-  modal.addEventListener('click', e => {
+    }
+
     if (e.target === modal) {
       modal.classList.remove('is-open');
     }
