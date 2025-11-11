@@ -37,7 +37,10 @@
       modal.classList.remove('is-open');
     }
   });
-  refs.openModalBtn.addEventListener('click', toggleModal);
+
+  if (refs.openModalBtn) {
+    refs.openModalBtn.addEventListener('click', toggleModal);
+  }
   refs.closeModalBtn1.addEventListener('click', toggleModal);
   refs.closeModalBtn2.addEventListener('click', toggleModal);
 
